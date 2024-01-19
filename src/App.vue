@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <nav class="navbar bg-body-tertiary">
+  <nav class="navbar bg-dark navbar-dark">
     <div class="container">
       <router-link class="navbar-brand" to="/">
         <img
@@ -20,13 +20,16 @@ import { RouterLink, RouterView } from 'vue-router';
         <router-link class="btn btn-outline-primary me-3" to="/"
           >Home</router-link
         >
-        <router-link class="btn btn-outline-primary" to="/pokemons"
+        <router-link class="btn btn-outline-primary me-3" to="/pokemons"
           >Pokemons</router-link
+        >
+        <router-link class="btn btn-outline-primary" to="/favoritos"
+          >Favoritos</router-link
         >
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container text-center">
     <RouterView />
   </div>
 </template>
